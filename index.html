@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <title>SHOPPING LIST</title>
+</head>
+<body>
+
+    <div class=" mx-auto  w-[1000px] pt-3 rounded my-20 bg-blue-800 p-10" >
+        <p class="font-bold text-xl text-center pb-4 text-white">Shopping List</p>
+
+        <!-- nav div -->
+
+
+        <div class="bg-green-100 p-5 rounded">
+            <nav class="w-1/2 mx-auto ">
+                
+                <label class="input input-bordered flex items-center gap-2">
+                    
+                        <input id="search-input" type="text" class="grow w-3/4" placeholder="Search your product" />
+                    
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      class="h-4 w-4 opacity-70">
+                      <path
+                        fill-rule="evenodd"
+                        d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </label>
+            </nav>  
+        </div>
+
+        <!-- end nav div -->
+
+
+        <ul id="ul-div">
+
+            <!-- first li element -->
+
+
+            <li class="w-full bg-white p-1 mx-auto rounded mt-5 flex justify-between items-center border-2">
+                <div class="product-label">
+                <strong>Grocery</strong>- <span class="price">$30</span>
+                </div>
+
+                <div>
+                    <button class="btn btn-error text-white delete-btn">Delete</button>
+                    <button class="btn btn-active btn-secondary edit-btn">Edit</button>
+                </div>
+            
+            </li>
+
+
+            <!-- second li element -->
+
+            <li class="w-full bg-white p-1 mx-auto rounded flex justify-between items-center border-2">
+                <div class="product-label">
+                <strong>sneakers</strong>- <span class="price">$20</span>
+                </div>
+                <div>
+                    <button class="btn btn-error text-white delete-btn">Delete</button>
+                    <button class="btn btn-active btn-secondary edit-btn">Edit</button>
+                </div>
+            </li>
+               
+        </ul>
+        <span id="msg"></span>
+        <form>
+            <div class="flex justify-between gap-3 mt-10">
+            <input id="product-name" class="w-1/2 outline-orange-600 p-2 bg-green-50 rounded" type="text" placeholder="Product Name"  >
+            <input id="product-price" class="w-1/2 outline-orange-600 p-2 bg-green-50 rounded" type="text" placeholder="price">
+            </div>
+
+            <button class="mt-3 btn btn-primary w-full p-2" type="submit">Submit</button>
+            <!-- <input class="w-full bg-white rounded py-2 font-bold mt-5" type="submit" value="submit"> -->
+        </form>
+        </div>
+        </div>
+
+
+<script src="main.js"></script>
+
+    
+</body>
+</html>
